@@ -69,6 +69,9 @@ namespace Animation
 			// aapt resource value: 0x7f050000
 			public const int imageViewBart = 2131034112;
 			
+			// aapt resource value: 0x7f050001
+			public const int imageViewHomer = 2131034113;
+			
 			static Id()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
