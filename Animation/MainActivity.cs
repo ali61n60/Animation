@@ -14,6 +14,12 @@ namespace Animation
             // Set our view from the "main" layout resource
              SetContentView (Resource.Layout.Main);
             initFields();
+            initAnimation();
+        }
+
+        private void initAnimation()
+        {
+            throw new System.NotImplementedException();
         }
 
         private void initFields()
