@@ -1,6 +1,7 @@
 ﻿using Android.App;
 using Android.Widget;
 using Android.OS;
+using Android.Util;
 using Java.Lang;
 
 namespace Animation
@@ -24,16 +25,14 @@ namespace Animation
         {
             _imageViewBart = FindViewById<ImageView>(Resource.Id.imageViewBart);
             _imageViewBart.Click += fadeBart;
-
-          
         }
 
-      
 
+        private int _numberOfRotation = 0;
         private void fadeBart(object sender, System.EventArgs e)
         {
-            _imageViewBart.Animate().XBy(-100f).SetDuration(2000);
-            _imageViewBart.Animate().YBy(100f).SetDuration(2000);
+            _numberOfRotation++;
+            _imageViewBart.Animate().Rotation(45f*_numberOfRotation).SetDuration(500);
         }
     }
 }
